@@ -1,0 +1,244 @@
+.device{
+    margin-bottom: 140px;
+    .container{
+        .device_inner{
+            margin-left: -40px;
+            margin-right: -40px;
+
+            &__label{
+                width: 102px;
+                display: flex;
+                justify-content: center;
+                border-radius: 5px;
+                text-align: center;
+                padding: 5px 10px;
+                background: $background-img-hero;
+                margin: 0 auto 15px;
+
+                span{
+                    font-family: $font-pr;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 100;
+                    text-transform: capitalize;
+                    color: $body-bg;
+                }
+            }
+
+            &__title{
+                font-family: $font-pr;
+                font-size: 44px;
+                font-weight: 300;
+                text-transform: capitalize;
+                color: $white;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+
+            &__items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 40px;
+
+                .device__item{
+                    width: 450px;
+                    background: $body-bg;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+                    border-radius: 5px;
+                    padding: 40px;
+
+                    &__title{
+                        font-size: 24px;
+                        font-weight: 200;
+                        line-height: 30px;
+                        color: $white;
+                        text-align: center;
+                    }
+                }
+
+                .device_current{
+                    
+                    &__title{
+                        margin-bottom: 45px;
+                    }
+
+                    &__box{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 auto;
+
+                        .device_current__row{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px;
+                            border-radius: 5px;
+                            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
+                            background: $body-bg;
+
+                            .device_current__name{
+                                color: $white;
+                                font-style: normal;
+                                font-weight: 200;
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+
+                            .device_current__value{
+                                color: $white;
+                                font-style: normal;
+                                font-weight: 200;
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+
+                            &:not(:last-child){
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .device_category{
+                    &__title{
+                        max-width: 300px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 90px;
+                    }
+
+                    &__items{
+                        display: flex;
+                        justify-content: center;
+                        gap: 40px;
+                        height: 380px;
+
+                        .device_category__name{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            
+
+                            &__title{
+                                width: 100%;
+                                max-width: 80px;
+                                min-width: 75px;
+                                position: relative;
+                                padding-left: 20px;
+                                font-style: normal;
+                                font-weight: 200;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: $text;
+
+                                &:before{
+                                    content: '';
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 6px;
+                                    left: 0;
+                                }
+                            }
+
+                            .high_title{
+                                &::before{
+                                    background: $device-category-sub-title-high;
+                                }
+                            }
+                            
+                            .middle_title{
+                                &::before{
+                                    background: $device-category-sub-title-middle;
+                                }
+                            }
+
+                            .low_title{
+                                &::before{
+                                    background: $device-category-sub-title-low;
+                                }
+                            }
+
+                            .very-low_title{
+                                &::before{
+                                    background: $device-category-sub-title-very_low;
+                                }
+                            }
+                        }
+
+                        .device_category__shoow{
+                            overflow: hidden;
+                            width: 190px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            background: $body-bg;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                .device_score{
+                    padding: 40px 10px;
+
+                    &__title{
+                        margin-bottom: 30px;
+                    }
+
+                    &__diagram{
+                        margin-bottom: 25px;
+                    }
+
+                    &__percent{
+                        max-width: 384px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        text-align: center;
+                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
+                        font-size: 48px;
+                        font-weight: 300;
+                        line-height: 60px;
+                        color: $white;
+                    }
+                }
+
+                .device_gpa{
+                    width: 100%;
+                    flex-shrink: 0;
+                    box-shadow: none;
+                    border-radius: 0px;
+                    margin-top: 38px;
+                    overflow: hidden;
+                    align-self: center;
+                    flex-basis: 100%;
+                    padding: 0;
+
+                    &__title{
+                        text-align: center;
+                        margin: 0 auto 60px;
+                        color: $white;
+                        font-style: normal;
+                        font-weight: 200;
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+
+                    &__diagram{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

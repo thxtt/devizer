@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+body{
+    background: $body-bg;
+    font-family: $font-pr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.fix-width{
+    max-width: 272px;
+}
+
+.pr-color{
+    color: $pr-color;
+}
+
+.sc-color{
+    color: $sc-color;
+}
+
+.sub-color{
+    color: $sub-color;
+}
+
+.btn_contact{
+    text-decoration: none;
+    display: block;
+    color: $white;
+    font-family: $font-pr;
+    font-size: 18px;
+    font-weight: 300;
+    width: 310px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(131deg, #6850FF 0%, #AA6CFF 40.36%, #925CE1 100%);
+    border-radius: 5px;
+
+    &:hover{
+        background: $light-purple;
+    }
+}
+
+.btn_learn{
+    text-decoration: none;
+    display: block;
+    color: $white;
+    font-family: $font-pr;
+    font-size: 16px;
+    font-weight: 250;
+    width: 140px;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    border: 3px solid $light-purple;
+    margin: 0;
+
+    &:hover{
+        background: $border-gradient-learn;
+        border: 3px solid transparent;
+        padding: 20px;
+    }
+}
+
+
+
+.power__info_tabs{
+    [data-target="credits"]{
+        li{
+            &:nth-child(1){
+                &::before{
+                    background: url(../img/power__info_tabs-credits-one.svg) center no-repeat;
+                }
+            }
+
+            &:nth-child(2){
+                &::before{
+                    background: url(../img/power__info_tabs-credits-two.svg) center no-repeat;
+                }
+            }
+
+            &:nth-child(3){
+                &::before{
+                    background: url(../img/power__info_tabs-credits-three.svg) center no-repeat;
+                }
+            }
+        }
+    }
+
+    [data-target="sales"]{
+        li{
+            &:nth-child(1){
+                &::before{
+                    background: url(../img/power__info_tabs-sales-one.svg) center no-repeat;
+                }
+            }
+
+            &:nth-child(2){
+                &::before{
+                    background: url(../img/power__info_tabs-sales-two.svg) center no-repeat;
+                }
+            }
+
+            &:nth-child(3){
+                &::before{
+                    background: url(../img/power__info_tabs-sales-three.svg) center no-repeat;
+                }
+            }
+        }
+    }
+
+    [data-target="marketing"]{
+        li{
+            &:nth-child(1){
+                &::before{
+                    background: url(../img/power__info_tabs-marketing-one.svg) center no-repeat;
+                }
+            }
+
+            &:nth-child(2){
+                &::before{
+                    background: url(../img/power__info_tabs-marketing-two.svg) center no-repeat;
+                }
+            }
+
+            &:nth-child(3){
+                &::before{
+                    background: url(../img/power__info_tabs-marketing-three.svg) center no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.pr-border-left{
+    padding-left: 10px;
+    border-left: 1px solid $pr-color;
+    font-size: 20px;
+    line-height: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.pr-border-right{
+    padding-right: 10px;
+    border-right: 1px solid $pr-color;
+    font-size: 20px;
+    line-height: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sc-border-left{
+    padding-left: 10px;
+    border-left: 1px solid $sc-color;
+    font-size: 20px;
+    line-height: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sc-border-right{
+    padding-right: 10px;
+    border-right: 1px solid $sc-color;
+    font-size: 20px;
+    line-height: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-border-left{
+    padding-left: 10px;
+    border-left: 1px solid $sub-color;
+    font-size: 20px;
+    line-height: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-border-right{
+    padding-right: 10px;
+    border-right: 1px solid $sub-color;
+    font-size: 20px;
+    line-height: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,150 @@
+.header {
+    background: $body-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
+
+    .container {
+
+        .navigation {
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__list {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                gap: 20px;
+
+                &__pages {
+                    display: flex;
+                    align-items: center;
+                    list-style-type: none;
+                    gap: 40px;
+
+                    li {
+                        a {
+                            font-size: 300px;
+                            position: relative;
+                            display: block;
+                            text-transform: capitalize;
+                            padding: 10px;
+                            color: $text;
+                            text-decoration: none;
+                            font-size: 18px;
+                            font-weight: 250;
+                            cursor: pointer;
+                            width: fit-content;
+                            font-family: $font-pr;
+                            transition: all 450ms ease;
+
+                            &::after,
+                            &::before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                transition: width 540ms, opacity 300ms ease;
+                            }
+                        }
+
+                        .link-h {
+                            display: grid;
+                            place-items: center;
+                        
+                            &-b-tr,
+                            &-b-bl {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                        
+                                &::before,
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    background-color: $pr-color;
+                                    transition: all 400ms ease-in-out;
+                                }
+                            }
+                        
+                            &-b-tr::before {
+                                right: 0;
+                                bottom: 0;
+                                width: 0;
+                                height: 1px;
+                            }
+                        
+                            &-b-tr::after {
+                                right: 0;
+                                top: 0;
+                                height: 0;
+                                width: 1px;
+                            }
+                        
+                            &-b-bl::before {
+                                left: 0;
+                                top: 0;
+                                width: 0;
+                                height: 1px;
+                            }
+                        
+                            &-b-bl::after {
+                                left: 0;
+                                bottom: 0;
+                                height: 0;
+                                width: 1px;
+                            }
+                        
+                            &:hover {
+                                color: $pr-color;
+                        
+                                .link-h-b-tr::before,
+                                .link-h-b-bl::before {
+                                    width: 100%;
+                                }
+                        
+                                .link-h-b-tr::after,
+                                .link-h-b-bl::after {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__started {
+                    width: 180px;
+                    font-family: $font-pr;
+                    color: $body-bg;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 10px;
+                    text-align: center;
+                    background: $white;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    transition: all 450ms ease;
+
+                    &:hover{
+                        background: $light-purple;
+                        color: $white;
+                    }
+
+                    &:active{
+                        background: $light-purple;
+                        color: $body-bg;
+                    }
+                }
+            }
+
+            .burger {
+                display: none;
+            }
+        }
+    }
+}

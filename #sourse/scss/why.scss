@@ -1,0 +1,107 @@
+.why{
+    .container{
+
+        .why__title{
+            margin-bottom: 70px;
+        }
+
+        .why__items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .why__item{
+                width: 250px;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+
+        .why__items__top{
+            border-bottom: 3px solid $pr-color;
+            margin-bottom: 60px;
+
+            .why__item{
+                align-items: flex-start;
+
+                &-percent{
+                    font-family: $font-sc;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 64px;
+                    line-height: 68px;
+                    text-transform: capitalize;
+                    margin-bottom: 16px;
+                    position: relative;
+                }
+
+                &-title{
+                    color: $white;
+                    font-family: $font-sc;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 100px;
+                        height: 3px;
+                        left: 0;
+                        bottom: -20px;
+                    }
+                }
+
+                &-description{
+                    text-align: left;
+                }
+
+                &:nth-child(1){
+                    .why__item-title{
+                        &::before{
+                            background: $plus-sc-color;
+                        }
+                    }
+                }
+
+                &:nth-child(2){
+                    .why__item-title{
+                        &::before{
+                            background: $sub-color;
+                        }
+                    }
+                }
+
+                &:nth-child(3){
+                    .why__item-title{
+                        &::before{
+                            background: $pr-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .why__items__bottom{
+            flex-wrap: wrap;
+            gap: 130px;
+
+            .why__item{
+                border-bottom: 3px solid $pr-color;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+                border-radius: 5px;
+                gap: 20px;
+            }
+        }
+    }
+}

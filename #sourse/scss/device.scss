@@ -1,5 +1,5 @@
 .device{
-    margin-bottom: 140px;
+    padding: 0 0 140px;
     .container{
         .device_inner{
             margin-left: -40px;
@@ -23,16 +23,6 @@
                     text-transform: capitalize;
                     color: $body-bg;
                 }
-            }
-
-            &__title{
-                font-family: $font-pr;
-                font-size: 44px;
-                font-weight: 300;
-                text-transform: capitalize;
-                color: $white;
-                text-align: center;
-                margin-bottom: 35px;
             }
 
             &__items{

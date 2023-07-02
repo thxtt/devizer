@@ -15,6 +15,10 @@ body{
     font-family: $font-pr;
 }
 
+.default_padding{
+    padding: 100px 0 140px;
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +30,51 @@ h6{
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
+}
+
+.title_2{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 44px;
+    line-height: 55px;
+    text-transform: capitalize;
+    text-align: center;
+    color: $white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title_2-before{
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 3px;
+        background: $pr-color;
+    }
+}
+
+.sub_title_description{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color: $text;
+}
+
+.text_description{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
+    color: $text;
 }
 
 .fix-width{
@@ -40,8 +89,18 @@ h6{
     color: $sc-color;
 }
 
+.plus-sc-color{
+    color: $plus-sc-color;
+}
+
 .sub-color{
     color: $sub-color;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn_contact{
@@ -81,6 +140,38 @@ h6{
         background: $border-gradient-learn;
         border: 3px solid transparent;
         padding: 20px;
+    }
+}
+
+.btn_see{
+    width: 280px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    border: 1px solid $white;
+    justify-content: flex-start;
+    padding-left: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1;
+    transition: all 0.5s ease;
+    position: relative;
+
+    &:hover{
+        border: 1px solid transparent;
+        background: $pr-color;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+        width: 16px;
+        height: 16px;
+        background: url(../img/btn-see-after.svg) center no-repeat;
     }
 }
 

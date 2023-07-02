@@ -1,40 +1,11 @@
 .power{
-    padding: 100px 0 140px;
-
     .container{
-
         .power__inner{
-
             .power__title{
-                font-style: normal;
-                font-weight: 200;
-                font-size: 44px;
-                line-height: 55px;
-                text-transform: capitalize;
-                text-align: center;
-                color: $white;
-                position: relative;
-
-                &:before{
-                    content: '';
-                    position: absolute;
-                    top: -20px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 120px;
-                    height: 3px;
-                    background: $pr-color;
-                }
+                margin-bottom: 0;
             }
 
             .power__description{
-                font-style: normal;
-                font-weight: 200;
-                font-size: 32px;
-                line-height: 40px;
-                text-transform: capitalize;
-                color: $text;
-                text-align: center;
 
                 &_box{
                     .subdescription{
@@ -163,12 +134,13 @@
                         display: none;
 
                         &__title{
+                            
                             font-style: normal;
                             font-weight: 200;
                             font-size: 24px;
                             line-height: 30px;
-                            color: $white;
                             text-align: center;
+                            color: $white;
                             margin-bottom: 20px;
                         }
 

@@ -10,9 +10,19 @@
     padding: 0 40px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background: $body-bg;
     font-family: $font-pr;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .default_padding{
@@ -105,7 +115,6 @@ h6{
 
 .btn_contact{
     text-decoration: none;
-    display: block;
     color: $white;
     font-family: $font-pr;
     font-size: 18px;
@@ -115,6 +124,7 @@ h6{
     text-align: center;
     background: linear-gradient(131deg, #6850FF 0%, #AA6CFF 40.36%, #925CE1 100%);
     border-radius: 5px;
+    //transition: all 0.3s ease;
 
     &:hover{
         background: $light-purple;

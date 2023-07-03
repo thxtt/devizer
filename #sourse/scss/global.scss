@@ -1,0 +1,28 @@
+.global{
+    .container{
+        .global__title{
+            margin-bottom: 50px;
+        }
+
+        .global__items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+
+            .global__item{
+                &__list{
+                    list-style-type: none;
+
+                    li{
+                        color: $white;
+
+                        &:not(:last-child){
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

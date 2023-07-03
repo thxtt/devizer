@@ -1,0 +1,59 @@
+.implementation{
+    padding: 100px 0 240px;
+    position: relative;
+    background: url(../img/implementation-bg.svg) center no-repeat;
+    .container{
+        .implementation__title{
+            margin-bottom: 70px;
+        }
+
+        .implementation__items{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .implementation__item{
+                width: 350px;
+                height: 360px;
+                box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.25);
+                background: $body-bg;
+                border-radius: 5px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &__title{
+                    font-family: $font-sc;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 64px;
+                    line-height: 68px;
+                    text-align: center;
+                    color: $white;
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                }
+
+                &__description{
+                    width: 250px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                &__icon{
+                    margin-bottom: 40px;
+                }
+
+                &__text{
+                    color: $pr-color;
+                }
+
+                &:nth-child(2){
+                    margin-top: 160px;
+                }
+            }
+        }
+    }
+}

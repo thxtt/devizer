@@ -1,0 +1,119 @@
+.footer{
+    padding: 100px 0 20px;
+    .container{
+        .footer__top{
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            border-bottom: 1px solid $text;
+            padding-bottom: 100px;
+            margin-bottom: 50px;
+
+            &__item{
+                width: 310px;
+
+                .footer__top__links_homepage{
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-transform: capitalize;
+                    list-style-type: none;
+
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: $text;
+                            transition: all 0.3s ease;
+
+                            &:hover{
+                                color: $white;
+                            }
+                        }
+
+                        &:not(:last-child){
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .footer__top__links__pages{
+                    list-style-type: none;
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-transform: capitalize;
+                    list-style-type: none;
+
+                    .footer__top__box{
+                        &:first-child{
+                            margin-bottom: 15px;
+                        }
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: $text;
+                                transition: all 0.3s ease;
+
+                                &:hover{
+                                    color: $white;
+                                }
+                            }
+
+                            &:not(:last-child){
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .footer__title{
+                    max-width: 310px;
+                    color: $white;
+                    text-align: left;
+                    margin-bottom: 40px;
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-transform: capitalize;
+                }
+
+                .btn_contact{
+                    width: 310px;
+                    height: 44px;
+                }
+            }
+        }
+
+        .footer__bottom{
+            &__list{
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                list-style-type: none;
+
+                li{
+                    width: 310px;
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-transform: capitalize;
+                    color: $text;
+
+                    a{
+                        text-decoration: none;
+                        color: $text;
+                        transition: all 0.3s ease;
+
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

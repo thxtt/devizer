@@ -780,6 +780,171 @@
   gap: 20px;
 }
 
+.global .container .global__title {
+  margin-bottom: 50px;
+}
+.global .container .global__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.global .container .global__items .global__item__list {
+  list-style-type: none;
+}
+.global .container .global__items .global__item__list li {
+  color: white;
+}
+.global .container .global__items .global__item__list li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.implementation {
+  padding: 100px 0 240px;
+  position: relative;
+  background: url(../img/implementation-bg.svg) center no-repeat;
+}
+.implementation .container .implementation__title {
+  margin-bottom: 70px;
+}
+.implementation .container .implementation__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.implementation .container .implementation__items .implementation__item {
+  width: 350px;
+  height: 360px;
+  box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.25);
+  background: #1E1E1E;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.implementation .container .implementation__items .implementation__item__title {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 68px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.implementation .container .implementation__items .implementation__item__description {
+  width: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.implementation .container .implementation__items .implementation__item__icon {
+  margin-bottom: 40px;
+}
+.implementation .container .implementation__items .implementation__item__text {
+  color: #AA6CFF;
+}
+.implementation .container .implementation__items .implementation__item:nth-child(2) {
+  margin-top: 160px;
+}
+
+.footer {
+  padding: 100px 0 20px;
+}
+.footer .container .footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #787878;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+.footer .container .footer__top__item {
+  width: 310px;
+}
+.footer .container .footer__top__item .footer__top__links_homepage {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+.footer .container .footer__top__item .footer__top__links_homepage li a {
+  text-decoration: none;
+  color: #787878;
+  transition: all 0.3s ease;
+}
+.footer .container .footer__top__item .footer__top__links_homepage li a:hover {
+  color: white;
+}
+.footer .container .footer__top__item .footer__top__links_homepage li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer .container .footer__top__item .footer__top__links__pages {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+.footer .container .footer__top__item .footer__top__links__pages .footer__top__box:first-child {
+  margin-bottom: 15px;
+}
+.footer .container .footer__top__item .footer__top__links__pages .footer__top__box li a {
+  text-decoration: none;
+  color: #787878;
+  transition: all 0.3s ease;
+}
+.footer .container .footer__top__item .footer__top__links__pages .footer__top__box li a:hover {
+  color: white;
+}
+.footer .container .footer__top__item .footer__top__links__pages .footer__top__box li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer .container .footer__top__item .footer__title {
+  max-width: 310px;
+  color: white;
+  text-align: left;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.footer .container .footer__top__item .btn_contact {
+  width: 310px;
+  height: 44px;
+}
+.footer .container .footer__bottom__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  list-style-type: none;
+}
+.footer .container .footer__bottom__list li {
+  width: 310px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #787878;
+}
+.footer .container .footer__bottom__list li a {
+  text-decoration: none;
+  color: #787878;
+  transition: all 0.3s ease;
+}
+.footer .container .footer__bottom__list li a:hover {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -792,9 +957,19 @@
   padding: 0 40px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #1E1E1E;
   font-family: "Gothic A1";
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .default_padding {
@@ -886,7 +1061,6 @@ h6 {
 
 .btn_contact {
   text-decoration: none;
-  display: block;
   color: white;
   font-family: "Gothic A1";
   font-size: 18px;

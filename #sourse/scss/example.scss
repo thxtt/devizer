@@ -1,0 +1,87 @@
+.example{
+    .container{
+        .example__title{
+            margin-bottom: 100px;
+        }
+
+        .example__items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+
+            .example__item{
+                .example_box{
+                    width: 350px;
+                    padding: 10px;
+
+                    &__title{
+                        font-size: 20px;
+                        font-weight: 200;
+                        line-height: 25px;
+                        color: $white;
+                        margin-bottom: 20px;
+                    }
+
+                    &__list{
+                        list-style-type: none;
+                        position: relative;
+
+                        li{
+                            margin-bottom: 5px;
+                            
+                            &:nth-child(1){
+                                color: $white;
+                            }
+
+                            &:nth-child(3){
+                                opacity: .8;
+                            }
+
+                            &:nth-child(4){
+                                opacity: .5;
+                            }
+
+                            &:nth-child(5){
+                                opacity: .2;
+                            }
+                        }
+
+                        &::before{
+                            content: '';
+
+                        }
+                    }
+                }
+            }
+
+            .left_item{
+                .example_box{
+                    &__list{
+                        margin-left: 90px;
+                        border-left: 1px solid $pr-color;
+                        padding-left: 20px;
+                    }
+                }
+            }
+
+            .right_item{
+                .example_box{
+                    &__title{
+                        text-align: end;
+                    }
+
+                    &__list{
+                        margin-right: 90px;
+                        border-right: 1px solid $pr-color;
+                        padding-right: 20px;
+
+                        li{
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

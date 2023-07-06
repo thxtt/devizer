@@ -25,6 +25,11 @@ img{
     max-width: 100%;
 }
 
+.fs_padding{
+    padding: 240px 0;
+    min-height: 100vh;
+}
+
 .default_padding{
     padding: 100px 0 140px;
 }
@@ -42,6 +47,16 @@ h6{
     line-height: inherit;
 }
 
+.title_1{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color: $white;
+}
+
 .title_2{
     font-style: normal;
     font-weight: 200;
@@ -54,7 +69,7 @@ h6{
     position: relative;
 }
 
-.title_2-before{
+.title_before{
     position: relative;
 
     &::before{
@@ -84,6 +99,15 @@ h6{
     font-weight: 200;
     font-size: 24px;
     line-height: 30px;
+    color: $text;
+    text-align: center;
+}
+
+.text{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
     color: $text;
 }
 

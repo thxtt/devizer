@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navigation">
+            <a href="index.html" class="navigation__logo_brand">
+                <picture>
+                    <source media="(min-width:1025px)" srcset="assets/img/logo-header-desktop.svg">
+                    <img src="assets/img/logo-header-desktop.svg" alt="">
+                </picture>
+            </a>
+
+            <div class="navigation__list">
+                <ul class="navigation__list__pages">
+                    <li>
+                        <a href="index.html" class="link-h">
+                            <span>
+                                Home
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-h">
+                            <span>
+                                About Us
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="technologies.html" class="link-h">
+                            <span>
+                                Technologies
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Integration.html" class="link-h">
+                            <span>
+                                Integration
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="price.html" class="link-h">
+                            <span>
+                                Price
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-h">
+                            <span>
+                                Developers
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-h">
+                            <span>
+                                Contact Us
+                            </span>
+                            <i class="link-h-b-tr"></i>
+                            <i class="link-h-b-bl"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="navigation__list__started" href="#">Get in touch</a>
+            </div>
+            
+            <button class="burger" id="burger"></button>
+        </nav>
+    </div>
+</header>
+
+    <main>
+<section class="price" id="price">
+    <div class="container">
+        <div class="price__items fs_padding">
+            <h1 class="price__title title_2 title_before">Pay for only what you use</h1>
+
+            <p class="price__description text_description">Fully flexible pricing based on the number of API request per month
+            </p>
+
+            <div class="price__content">
+                <h3 class="price__content__title">All plans include 30 days free trial. No payment required.</h3>
+
+                <p class="price__content__description">Number of non-empty responses</p>
+
+                <div class="price__content__table">
+
+                    <div class="price__content__table__row">
+                        <div class="table_title">Range</div>
+                        <div class="table_title">From <br> #</div>
+                        <div class="table_title">To <br> #</div>
+
+                        <div class="table__row__items_title">
+                            <div class="table_title__price">
+                                <div class="table_title title_price">Price *, USD</div>
+                            </div>
+
+                            <div class="table_title__devise">
+                                <div class="table_title title_devise">Mobile</div>
+                                <div class="table_title title_devise">PC</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="price__content__table__row">
+                        <div class="table_item">A</div>
+                        <div class="table_item">1</div>
+                        <div class="table_item">10 000</div>
+                        <div class="table_items">
+                            <div class="table_item">0.10</div>
+                            <div class="table_item">0.005</div>
+                        </div>
+                    </div>
+
+                    <div class="price__content__table__row">
+                        <div class="table_item">B</div>
+                        <div class="table_item">10 001</div>
+                        <div class="table_item">30 000</div>
+                        <div class="table_items">
+                            <div class="table_item">0.17</div>
+                            <div class="table_item">0.005</div>
+                        </div>
+                    </div>
+
+                    <div class="price__content__table__row">
+                        <div class="table_item">C</div>
+                        <div class="table_item">31 001</div>
+                        <div class="table_item">~</div>
+                        <div class="table_items">
+                            <div class="table_item">0.05</div>
+                            <div class="table_item">0.005</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="price__content__sub_description">Final price is formed by adding up the cost of requests from all ranges: Range A + Range B + Range C</p>
+
+                <ul class="price__content__list">
+                    <div class="price__content__list__description">For example:</div>
+                    <li>you received 90,000 non-empty responses (45,000 for Mobile and 45,000 for PC)</li>
+                    <li>the final cost will be: 10 000 x 0,1 + 20 000 x 0,07 + 15 000 x 0,05 + 45 000 x 0,005 = 3 375
+                        USD</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>    </main>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top__item">
+                <a href="index.html">
+                    <img src="assets/img/logo-footer-desktop.svg" alt="logo-footer-icon">
+                </a>
+            </div>
+            <div class="footer__top__item">
+                <ul class="footer__top__links_homepage">
+                    <li>
+                        <a href="#device">See devizer in Action</a>
+                    </li>
+                    <li>
+                        <a href="#power">Feel The Power Of Device Based Score</a>
+                    </li>
+                    <li>
+                        <a href="#grade">Device Based Score</a>
+                    </li>
+                    <li>
+                        <a href="#scoring">Devises  Is Alternative Scoring</a>
+                    </li>
+                    <li>
+                        <a href="#ai">Artificial Intelligence Accelerated System</a>
+                    </li>
+                    <li>
+                        <a href="#why">Why Deviser?</a>
+                    </li>
+                    <li>
+                        <a href="#global">We Are About Global</a>
+                    </li>
+                    <li>
+                        <a href="#implementation">Deviser Is Easy To Implement</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top__item">
+                <ul class="footer__top__links__pages">
+                    <div class="footer__top__box">
+                        <li>
+                            <a href="#index">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="technologies.html">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="Integration.html">Integration</a>
+                        </li>
+                    </div>
+                    <div class="footer__top__box">
+                        <li>
+                            <a href="price.html">Price</a>
+                        </li>
+                        <li>
+                            <a href="#">Developers</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer__top__item">
+                <h2 class="footer__title">Do You Still Have Questions?</h2>
+
+                <a class="btn_contact btn" href="#">CONTACT US</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom__list">
+                <li>
+                    <span>2023 sAAS.IO All Rights Reserved</span>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms Of Use</a>
+                </li>
+                <li>
+                    <span>user Agreement</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer></body>
+</html>

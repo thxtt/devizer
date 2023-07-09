@@ -1,0 +1,28 @@
+.integration_hero{
+    .container{
+        .integration_hero__inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .integration_hero__content{
+                .integration_hero__title{
+                    font-style: normal;
+                    width: 350px;
+                    text-align: start;
+                    margin-bottom: 25px;
+                    font-weight: 200;
+                    font-size: 44px;
+                    line-height: 55px;
+                    text-transform: capitalize;
+                    color: $white;
+                }
+
+                .integration_hero__description{
+                    max-width: 660px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

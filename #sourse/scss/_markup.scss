@@ -132,6 +132,7 @@ h6{
 }
 
 .btn{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,6 +207,37 @@ h6{
         width: 16px;
         height: 16px;
         background: url(../img/btn-see-after.svg) center no-repeat;
+    }
+}
+
+.btn_dev{
+    width: 280px;
+    height: 42px;
+    padding: 20px 40px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    justify-content: flex-start;
+    background: $sub-text;
+    color: $black;
+    position: relative;
+    border-radius: 5px;
+    transition: all .3s ease;
+
+    &:hover{
+        background: $white;
+    }
+
+    &::after{
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+        background: url(/assets/img/btn_dev-after.svg) center no-repeat;
     }
 }
 

@@ -1,0 +1,22 @@
+.integration_api{
+    .container{
+        .integration_api__items{
+            display: flex;
+            justify-content: space-between;
+
+            .integration_api__content{
+                .integration_api__title{
+                    width: 310px;
+                    text-align: start;
+                    margin-bottom: 20px;
+                }
+
+                .integration_api__description{
+                    width: 660px;
+                    text-align: start;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.integration_flow{
+    .container{
+        .integration_flow__items{
+            .integration_flow__title{
+                text-align: start;
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            .integration_flow__list{
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                flex-wrap: wrap;
+                list-style-type: none;
+
+                .list__item{
+                    width: 660px;
+                    height: 120px;
+                    color: $pr-color;
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 24px;
+                    line-height: 30px;
+                    line-height: normal;
+                    color: $pr-color;
+                    text-align: start;
+                }
+
+                .list__item_block{
+                    width: 550px;
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 40px;
+                    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
+                    gap: 30px;
+
+                    span{
+                        font-style: normal;
+                        font-weight: 200;
+                        font-size: 44px;
+                        line-height: 55px;
+                        text-transform: capitalize;
+                        text-align: center;
+                        color: $white;
+                    }
+
+                    p{
+                        color: $text;
+                    }
+                }
+            }
+        }
+    }
+}

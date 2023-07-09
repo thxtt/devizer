@@ -1007,8 +1007,205 @@
   text-align: end;
 }
 
+.integration_hero .container .integration_hero__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.integration_hero .container .integration_hero__inner .integration_hero__content .integration_hero__title {
+  font-style: normal;
+  width: 350px;
+  text-align: start;
+  margin-bottom: 25px;
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 55px;
+  text-transform: capitalize;
+  color: white;
+}
+.integration_hero .container .integration_hero__inner .integration_hero__content .integration_hero__description {
+  max-width: 660px;
+  text-align: start;
+}
+
+.integration_api .container .integration_api__items {
+  display: flex;
+  justify-content: space-between;
+}
+.integration_api .container .integration_api__items .integration_api__content .integration_api__title {
+  width: 310px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.integration_api .container .integration_api__items .integration_api__content .integration_api__description {
+  width: 660px;
+  text-align: start;
+  margin-bottom: 45px;
+}
+
+.integration_flow .container .integration_flow__items .integration_flow__title {
+  text-align: start;
+  width: 400px;
+  margin-bottom: 50px;
+}
+.integration_flow .container .integration_flow__items .integration_flow__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.integration_flow .container .integration_flow__items .integration_flow__list .list__item {
+  width: 660px;
+  height: 120px;
+  color: #AA6CFF;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+  line-height: normal;
+  color: #AA6CFF;
+  text-align: start;
+}
+.integration_flow .container .integration_flow__items .integration_flow__list .list__item_block {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  gap: 30px;
+}
+.integration_flow .container .integration_flow__items .integration_flow__list .list__item_block span {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 55px;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+}
+.integration_flow .container .integration_flow__items .integration_flow__list .list__item_block p {
+  color: #787878;
+}
+
+.price .container .price__items .price__description {
+  margin-bottom: 80px;
+}
+.price .container .price__items .price__content__title {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: white;
+}
+.price .container .price__items .price__content__description {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #787878;
+}
+.price .container .price__items .price__content__table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.price .container .price__items .price__content__table__row {
+  display: flex;
+  gap: 20px;
+}
+.price .container .price__items .price__content__table__row .table_title {
+  width: 140px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #AA6CFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+}
+.price .container .price__items .price__content__table__row .table__row__items_title .table_title__price .title_price {
+  width: 300px;
+  height: 80px;
+}
+.price .container .price__items .price__content__table__row .table__row__items_title .table_title__devise {
+  display: flex;
+  gap: 20px;
+}
+.price .container .price__items .price__content__table__row .table__row__items_title .table_title__devise .title_devise {
+  width: 140px;
+  height: 80px;
+}
+.price .container .price__items .price__content__table__row .table_item {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 21px;
+  color: #787878;
+  border-radius: 5px;
+  border-bottom: 1px solid #AA6CFF;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.price .container .price__items .price__content__table__row .table_items {
+  display: flex;
+  gap: 20px;
+}
+.price .container .price__items .price__content__sub_description {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #787878;
+  max-width: 540px;
+}
+.price .container .price__items .price__content__list {
+  list-style-type: none;
+}
+.price .container .price__items .price__content__list__description {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #787878;
+}
+.price .container .price__items .price__content__list li {
+  position: relative;
+  padding-left: 40px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #787878;
+}
+.price .container .price__items .price__content__list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  background: url(../img/price__content__list-li.svg) center no-repeat;
+}
+
 .footer {
   padding: 100px 0 20px;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .footer .container .footer__top {
   display: flex;
@@ -1235,6 +1432,7 @@ h6 {
 }
 
 .btn {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1305,6 +1503,35 @@ h6 {
   width: 16px;
   height: 16px;
   background: url(../img/btn-see-after.svg) center no-repeat;
+}
+
+.btn_dev {
+  width: 280px;
+  height: 42px;
+  padding: 20px 40px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  justify-content: flex-start;
+  background: #9A9A9A;
+  color: black;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn_dev:hover {
+  background: white;
+}
+.btn_dev::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+  background: url(/assets/img/btn_dev-after.svg) center no-repeat;
 }
 
 .power__info_tabs [data-target=credits] li:nth-child(1)::before {

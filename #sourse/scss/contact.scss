@@ -1,0 +1,92 @@
+.contact{
+    .container{
+        .contact__inner{
+            .contact_title{
+                margin-bottom: 40px;
+            }
+
+            .contact__items{
+                display: flex;
+                justify-content: space-between;
+                gap: 35px;
+
+
+                .contact_item_form{
+                    width: 510px;
+                    
+                    .contact__form__subtitile{
+                        text-align: center;
+                        margin-bottom: 25px;
+                    }
+
+                    .contact__form{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 20px 20px 40px;
+                        margin-bottom: 55px;
+                        gap: 20px;
+                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
+
+                        &__text{
+                            text-align: center;
+                        }
+
+                        .contact__form__input,
+                        .contact__form__textarea{
+                            width: 100%;
+                            background: #d2d2d2;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+                            border-radius: 5px;
+                            padding: 15px 10px;
+                            color: $body-bg;
+                            border: 3px solid transparent;
+                            transition: all 0.6s ease;
+
+                            &:active{
+                                border: 3px solid $sub-text;
+                            }
+
+                            &::placeholder{
+                                font-family: $font-pr;
+                            }
+                        }
+
+                        .contact__form__textarea{
+                            min-height: 140px;
+                            width: 100%;
+                        }
+
+                        &__btn{
+                            width: 100%;
+                        }
+                    }
+
+                    .contact__form__thx{
+                        display: none;
+                        padding: 40px 20px;
+                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
+                        border-radius: 5px;
+
+                        &__text{
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .contact__item__text{
+                        margin-bottom: 15px;
+
+                        span{
+                            color: $white;
+                        }
+                    }
+
+                    .support_post{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

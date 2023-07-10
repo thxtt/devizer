@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integration</title>
+    <title>Developers</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -93,80 +94,117 @@
 </header>
 
     <main>
-<section class="integration_hero" id="integration_hero">
+<section class="developers_hero" id="developers_hero">
     <div class="container">
-        <div class="integration_hero__inner fs_padding">
-            <div class="integration_hero__content">
-                <h1 class="integration_hero__title  title_before">How to integrate Deviser solution?</h1>
-                
-                <p class="integration_hero__description text_description">
-                    Deviser gives analysts, risk managers, salers, marketologs a complete end-to-end solution that is transparent and integrates seamlessly into your platform.
-                </p>
+
+        <div class="developers_hero__items">
+
+            <div class="developers_hero__content">
+                <div class="developers_hero__main_info">
+                    <h1 class="developers_hero__title title_2 title_before">Quick start</h1>
+    
+                    <div class="developers_hero__title__subtitle">List of supported integrations</div>
+                    
+                    <p class="developers_hero__description text">Google Tag Manager</p>
+                </div>
+    
+                <div class="developers_hero__sub_info">
+                    <h2 class="developers_hero__sub_info__title">Authentication / Create a subscription ?</h2>
+    
+                    <ul class="developers_hero__sub_info__list">
+                        <p class="developers_hero__sub_info__list__description">Basically Devizer operates in three simple steps:</p>
+                    
+                        <li>1. Customer device Black box data collects on your web application</li>
+                        <li>2. Blackbox data automatically sends to Devizer platform</li>
+                        <li>3. You make a request and get data with Devizer score</li>
+    
+                        <p class="developers_hero__sub_info__list__description last_description">Basically Devizer operates in three simple steps:</p>
+                    </ul>
+                </div>
             </div>
-            <div class="integration_hero__img">
-                <img src="assets/img/integration_hero__img.svg" alt="">
+    
+            <div class="developers_hero__img">
+                <img src="assets/img/developers-hero-img.svg" alt="">
+                <div class="developers_hero__img__decor"></div>
             </div>
+
         </div>
+
     </div>
 </section>
-<section class="integration_api default_padding" id="integration_api">
+<section class="developers_steps" id="developers_steps">
     <div class="container">
-        <div class="integration_api__items">
+        <div class="developers_steps__items">
 
-            <div class="integration_api__content">
-                <h2 class="integration_api__title title_2 title_before">API Integration</h2>
-                <p class="integration_api__description text_description">
-                    Our simple REST API can be integrated via code. We have a clear overview of the integration process on the developers page.
-                </p>
+            <div class="number__step developers_steps__one">
+                <h2 class="developers_steps__title">Step 1</h2>
 
-                <a href="#" class="btn btn_dev">Developers page button</a>
-            </div>
-            <div class="integration_api__img">
-                <img src="assets/img/integration_api__img.svg" alt="">
+                <div class="block__description">
+                    <p class="developers_steps__description">Black box data collects with Devizer script automatically for every visitor</p>
+                    <p class="developers_steps__description">Each collected black box is assigned a unique identifier</p>
+                </div>
             </div>
             
+            <div class="number__step developers_steps__two">
+                <h2 class="developers_steps__title">Step 2</h2>
+
+                <div class="block__description">
+                    <p class="developers_steps__description">Black box data collects with Devizer script automatically for every visitor</p>
+                    <p class="developers_steps__description">Each collected black box is assigned a unique identifier</p>
+                </div>
+            </div>
+
+            <div class="number__step developers_steps__three">
+                <h2 class="developers_steps__title">Step 3</h2>
+
+                <div class="block__description">
+                    <p class="developers_steps__description">Devizer is designed to give you full anderstanding behind every score. </p>
+                </div>
+            </div>
+
+            <div class="number__step developers_steps__default">
+                <h2 class="developers_steps__title">Default:</h2>
+
+                <div class="block__description">
+                    <p class="developers_steps__description">- a score of less than 30 indicates a low overall assessment of the device (including low solvency of the client)</p>
+                    <p class="developers_steps__description">- a score greater than 70 indicates a high overall assessment of the device (including a high solvency of the client)</p>    
+                </div>
+             </div>
+
+            <div class="number__step developers_steps__example">
+                <h2 class="developers_steps__title"> Standard thresholds for each state are:</h2>
+            
+                <div class="developers_steps__example__table">
+                    <div class="table_item white-color">
+                        <div class="table_text">State</div>
+                        <div class="table_text">Trashhold</div>
+                    </div>
+                    <div class="table_item sc-color">
+                        <div class="table_text">High solvency of the client</div>
+                        <div class="table_text">70-100</div>
+                    </div>
+                    <div class="table_item sub-color">
+                        <div class="table_text">Middle solvency of the client</div>
+                        <div class="table_text">30-70</div>
+                    </div>
+                    <div class="table_item pr-color">
+                        <div class="table_text">Low solvency of the client</div>
+                        <div class="table_text">0-30</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="number__step developers_steps__integration">
+                <h2 class="developers_steps__title">Integration Steps</h2>
+
+                <div class="block__description">
+                    <p class="developers_steps__description">You need to install the JavaScript agent. The agent is required to send requests to our identification backend. We refer to the JavaScript agent as "JS agent" further in this guide.</p>
+                    <p class="developers_steps__description">The client-side agent is a high-performance JavaScript agent that collects multiple device and browser signals and sends them to the Fingerprint Pro API for processing, identification, and bot detection.</p>    
+                </div>
+            </div>
         </div>
     </div>
-</section>
-<div class="integration_flow default_padding" id="integration_flow">
-    <div class="container">
-        <div class="integration_flow__items">
-            <h2 class="integration_flow__title title_2 title_before">The integration flow</h2>
-
-            <ul class="integration_flow__list text_description">
-
-                <li class="list__item list__item_block">
-                    <span>01</span>
-                    <p>PHP script implementation</p>
-                </li>
-
-                <li class="list__item">
-                    Deviser is designed to integrate with your current platform within hours.
-                </li>
-
-                <li class="list__item list__item_block">
-                    <span>02</span>
-                    <p>REST API requests creating</p>
-                </li>
-
-                <li class="list__item">
-                    Whether you are a big financial company or a small ecommerce, the end-to-end solution can leverage data and enrich it to know your customers better and increase your company revenue.
-                </li>
-
-                <li class="list__item list__item_block">
-                    <span>03</span>
-                    <p>Enjoying accurate results</p>
-                </li>
-
-                <li class="list__item list__item_btn">
-                    <a href="#" class="btn btn_dev">Developers page button</a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</div>
-    </main>
+</section>    </main>
 
 <footer class="footer" id="footer">
     <div class="container">

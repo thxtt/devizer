@@ -850,6 +850,122 @@
   margin-top: 160px;
 }
 
+.about .container .about__inner .about__items {
+  display: flex;
+  justify-content: space-between;
+}
+.about .container .about__inner .about__items .about__item_content {
+  width: 600px;
+  padding-top: 50px;
+}
+.about .container .about__inner .about__items .about__item .about__title {
+  text-align: left;
+}
+.about .container .about__inner .about__items .about__item_text {
+  width: 310px;
+  margin-left: 260px;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .container .about__inner .about__items .about__item .about_slider {
+  width: 660px;
+  position: relative;
+}
+.about .container .about__inner .about__items .about__item .about_slider__title {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #787878;
+}
+.about .container .about__inner .about__items .about__item .about_slider__item {
+  margin-top: 10px;
+}
+.about .container .about__inner .about__items .about__item .about_slider__item .swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.about .container .about__inner .about__items .about__item .about_slider__item .swiper__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.about .container .about__inner .about__items .about__item .about_slider__item .swiper__wrapper .swiper_slide {
+  width: 310px;
+  height: 155px;
+  border: 1px solid #AA6CFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+.about .container .about__inner .about__items .about__item .about_slider__item .swiper__wrapper .swiper_slide__text {
+  padding-left: 30px;
+  position: relative;
+}
+.about .container .about__inner .about__items .about__item .about_slider__item .swiper__wrapper .swiper_slide__text:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  background: url(../img/swiper_slide__text-before.svg) center no-repeat;
+}
+.about .container .about__inner .about__items .about__item .about_slider .about_slider__top {
+  margin-top: 0;
+}
+.about .container .about__inner .about__items .about__item .about_slider__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.about .container .about__inner .about__items .about__item .about_slider .btn_prev {
+  background: url(../img/about_slider__btn-prev.svg) center no-repeat;
+  left: -50px;
+}
+.about .container .about__inner .about__items .about__item .about_slider .btn_next {
+  background: url(../img/about_slider__btn-next.svg) center no-repeat;
+  right: -50px;
+}
+.about .container .about__inner .about__items .about__item .about_slider::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: -70px;
+  background: url(../img/about-slider-before.svg) center no-repeat;
+}
+.about .container .about__inner .about__items .about__item .about_slider::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  right: -70px;
+  background: url(../img/about-slider-after.svg) center no-repeat;
+}
+
 .technologies_hero .container .technologies_hero__inner {
   display: flex;
   align-items: center;
@@ -1387,6 +1503,10 @@
 .contact .container .contact__inner .contact__items .contact_item_form .contact__form .contact__form__textarea::placeholder {
   font-family: "Gothic A1";
 }
+.contact .container .contact__inner .contact__items .contact_item_form .contact__form .contact__form__input:focus-visible,
+.contact .container .contact__inner .contact__items .contact_item_form .contact__form .contact__form__textarea:focus-visible {
+  outline: none;
+}
 .contact .container .contact__inner .contact__items .contact_item_form .contact__form .contact__form__textarea {
   min-height: 140px;
   width: 100%;
@@ -1781,6 +1901,10 @@ h6 {
   letter-spacing: 0.2px;
   border: none;
   border-radius: 5px;
+}
+
+.swiper_pointer_events {
+  touch-action: pan-y;
 }
 
 .power__info_tabs [data-target=credits] li:nth-child(1)::before {

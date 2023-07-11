@@ -50,6 +50,10 @@
                             &::placeholder{
                                 font-family: $font-pr;
                             }
+
+                            &:focus-visible{
+                                outline: none;
+                            }
                         }
 
                         .contact__form__textarea{

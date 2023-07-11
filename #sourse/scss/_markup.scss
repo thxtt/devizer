@@ -280,7 +280,9 @@ h6{
     border-radius: 5px;
 }
 
-
+.swiper_pointer_events {
+    touch-action: pan-y;
+}
 
 .power__info_tabs{
     [data-target="credits"]{

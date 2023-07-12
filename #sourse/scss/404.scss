@@ -1,0 +1,42 @@
+.error{
+    .container{
+        .error__items{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10vh 0;
+            overflow: hidden;
+
+            .error__title{
+                font-style: normal;
+                font-size: 48px;
+                font-weight: 200;
+                line-height: 60px;
+                color: $white;
+                margin: 0 auto 20px;
+                text-align: center;
+            }
+           
+            .error__subtitle{
+                font-style: normal;
+                font-size: 24px;
+                font-weight: 200;
+                line-height: 30px;
+                color: $text;
+            }
+
+            .error__img{
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .error__description{
+                display: flex;
+                gap: 20px;
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

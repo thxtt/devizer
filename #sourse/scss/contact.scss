@@ -7,7 +7,8 @@
 
             .contact__items{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+                flex-wrap: wrap;
                 gap: 35px;
 
 

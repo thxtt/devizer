@@ -6,7 +6,8 @@
             }
 
             .power__description{
-
+                margin-bottom: 20px;
+                
                 &_box{
                     .subdescription{
                         display: none;
@@ -96,6 +97,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
 
                     p{
                         font-size: 24px;
@@ -108,6 +110,7 @@
                         opacity: 1;
                     }
                 }
+
                 .power_tabs__btn.active{
                     opacity: 1;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
@@ -134,7 +137,7 @@
                         display: none;
 
                         &__title{
-                            
+                            text-transform: uppercase;
                             font-style: normal;
                             font-weight: 200;
                             font-size: 24px;
@@ -169,7 +172,7 @@
                             }
                         }
 
-                        &__sub_title{
+                        &__subtitle{
                             font-size: 20px;
                             line-height: 25px;
                             text-align: center;

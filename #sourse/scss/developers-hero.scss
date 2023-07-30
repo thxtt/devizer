@@ -1,5 +1,4 @@
 .developers_hero{
-    padding: 240px 0 40px;
     .container{
         .developers_hero__items{
             display: flex;
@@ -74,6 +73,7 @@
                 position: relative;
                 display: flex;
                 justify-content: center;
+                max-width: 550px;
 
                 &__decor{
                     position: absolute;

@@ -1,0 +1,35 @@
+@media screen and (max-width: 1500px) {
+    .header{
+        .container{
+            .navigation{
+                &__list{
+                    gap: calc(20px + 36 * ((100vw - 1200px) / 300));
+
+                    &__pages{
+                        gap: calc(5px + 35 * ((100vw - 1200px) / 300));
+                    }
+                }
+            }
+        }
+    }
+
+    .about{
+        .container{
+            .about__inner{
+                .about__items{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 60px;
+
+                    .about__item_content{
+                        padding-top: 0;
+
+                        .about__item_text{
+                            margin-top: calc(-40px - 30 * ((100vw - 375px) / 1065));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

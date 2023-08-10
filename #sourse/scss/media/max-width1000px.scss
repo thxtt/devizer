@@ -1,0 +1,19 @@
+@media screen and (max-width: 1000px) {
+    .ai{
+        .container{
+            .ai__items{
+                flex-direction: column;
+                gap: calc(40px + 50 * ((100vw - 375px) / 1065));
+
+                .ai__item{
+                    &:nth-child(2){
+                        .ai__decor{
+                            width: calc(200px + 200 * ((100vw - 375px) / 1065));
+                            height: calc(200px + 200 * ((100vw - 375px) / 1065));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

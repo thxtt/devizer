@@ -5,6 +5,8 @@
             justify-content: space-between;
 
             .integration_api__content{
+                max-width: 660px;
+                
                 .integration_api__title{
                     width: 310px;
                     text-align: start;
@@ -12,7 +14,6 @@
                 }
 
                 .integration_api__description{
-                    width: 660px;
                     text-align: start;
                     margin-bottom: 45px;
                 }

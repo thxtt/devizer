@@ -1,0 +1,22 @@
+@media screen and (max-width: 950px) {
+  .implementation {
+    background: url(../img/implementation-bg-step2.svg) left top 50% no-repeat;
+  }
+  .implementation .container .implementation__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .implementation .container .implementation__items .implementation__item:nth-child(2) {
+    margin-top: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .implementation .container .implementation__items .implementation__item:nth-child(3) {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}

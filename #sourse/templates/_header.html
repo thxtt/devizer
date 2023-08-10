@@ -2,13 +2,14 @@
     <div class="container">
         <nav class="navigation">
             <a href="index.html" class="navigation__logo_brand">
-                <picture>
+                <img src="assets/img/logo-header-desktop.svg" alt="">
+                <!-- <picture>
                     <source media="(min-width:1025px)" srcset="assets/img/logo-header-desktop.svg">
                     <img src="assets/img/logo-header-desktop.svg" alt="">
-                </picture>
+                </picture> -->
             </a>
 
-            <div class="navigation__list">
+            <div class="navigation__list" id="navigation__list">
                 <ul class="navigation__list__pages">
                     <li>
                         <a href="index.html" class="link-h">
@@ -75,10 +76,12 @@
                     </li>
                 </ul>
 
-                <a class="navigation__list__started" href="#">Get in touch</a>
+                <a class="navigation__list__started" href="contact.html">Get in touch</a>
             </div>
             
-            <button class="burger" id="burger"></button>
+            <button class="burger" id="burger">
+                <span></span>
+            </button>
         </nav>
     </div>
 </header>

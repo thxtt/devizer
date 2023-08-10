@@ -1,0 +1,102 @@
+@media screen and (max-width: 700px) {
+
+    .first_screen{
+        .container{
+            .hero_items{
+                .hero_item{
+                    &:nth-child(2){
+                        .hero-decor{
+                            width: calc(300px + 100 * ((100vw - 375px) / 1065));
+                            height: calc(300px + 100 * ((100vw - 375px) / 1065));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .implementation{
+        background: none;
+
+        .container{
+            .implementation__items{
+                .implementation__item{
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .integration_hero{
+        .container{
+            .integration_hero__inner{
+                min-height: auto;
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    .integration_api{
+        padding-top: 0;
+    }
+
+    footer{
+        .container{
+            .footer__top{
+                &__item{
+                    &:nth-child(1){
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    &:nth-child(3){
+                        width: 100%;
+
+                        .footer__top__links__pages{
+                            display: flex;
+                            justify-content: space-between;
+
+                            .footer__top__box{
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                &:nth-child(2){
+                                    padding-top: 38px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(4){
+                        width: 100%;
+
+                        .footer__title{
+                            margin: 0 auto 40px;
+                            text-align: center;
+                        }
+
+                        .btn_contact{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .footer__bottom{
+                .footer__bottom__list{
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    li{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}

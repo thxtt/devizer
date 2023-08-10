@@ -1,0 +1,23 @@
+@media screen and (max-width: 850px) {
+    .example{
+        .container{
+            .example__items{
+                .left_item{
+                    order: 1;
+                }
+                .example_img{
+                    order: 2;
+                    width: 100%;
+                }
+                .right_item{
+                    order: 3;
+                    width: 100%;
+                    
+                    .example_box{
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}

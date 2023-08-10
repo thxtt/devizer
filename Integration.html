@@ -11,13 +11,14 @@
     <div class="container">
         <nav class="navigation">
             <a href="index.html" class="navigation__logo_brand">
-                <picture>
+                <img src="assets/img/logo-header-desktop.svg" alt="">
+                <!-- <picture>
                     <source media="(min-width:1025px)" srcset="assets/img/logo-header-desktop.svg">
                     <img src="assets/img/logo-header-desktop.svg" alt="">
-                </picture>
+                </picture> -->
             </a>
 
-            <div class="navigation__list">
+            <div class="navigation__list" id="navigation__list">
                 <ul class="navigation__list__pages">
                     <li>
                         <a href="index.html" class="link-h">
@@ -84,21 +85,23 @@
                     </li>
                 </ul>
 
-                <a class="navigation__list__started" href="#">Get in touch</a>
+                <a class="navigation__list__started" href="contact.html">Get in touch</a>
             </div>
             
-            <button class="burger" id="burger"></button>
+            <button class="burger" id="burger">
+                <span></span>
+            </button>
         </nav>
     </div>
 </header>
 
-    <main>
+    <main class="integration">
 <section class="integration_hero" id="integration_hero">
     <div class="container">
         <div class="integration_hero__inner fs_padding">
 
             <div class="integration_hero__content">
-                <h1 class="integration_hero__title  title_before">How to integrate Deviser solution?</h1>
+                <h1 class="integration_hero__title title_before">How to integrate Deviser solution?</h1>
                 
                 <p class="integration_hero__description text_description">
                     Deviser gives analysts, risk managers, salers, marketologs a complete end-to-end solution that is transparent and integrates seamlessly into your platform.
@@ -132,7 +135,7 @@
         </div>
     </div>
 </section>
-<div class="integration_flow default_padding" id="integration_flow">
+<section class="integration_flow default_padding" id="integration_flow">
     <div class="container">
         <div class="integration_flow__items">
             <h2 class="integration_flow__title title_2 title_before">The integration flow</h2>
@@ -169,11 +172,12 @@
             </ul>
         </div>
     </div>
-</div>
+</section>
     </main>
 
 <footer class="footer" id="footer">
     <div class="container">
+
         <div class="footer__top">
             <div class="footer__top__item">
                 <a href="index.html">
@@ -210,6 +214,7 @@
             </div>
             <div class="footer__top__item">
                 <ul class="footer__top__links__pages">
+
                     <div class="footer__top__box">
                         <li>
                             <a href="index.html">Home</a>
@@ -235,14 +240,16 @@
                             <a href="contact.html">Contact Us</a>
                         </li>
                     </div>
+                    
                 </ul>
             </div>
             <div class="footer__top__item">
                 <h2 class="footer__title">Do You Still Have Questions?</h2>
 
-                <a class="btn_contact btn" href="#">CONTACT US</a>
+                <a class="btn_contact btn" href="contact.html">CONTACT US</a>
             </div>
         </div>
+        
         <div class="footer__bottom">
             <ul class="footer__bottom__list">
                 <li>
@@ -260,5 +267,8 @@
             </ul>
         </div>
     </div>
-</footer></body>
+</footer>    
+    <script src="/assets/js/jQuery3.6.1.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

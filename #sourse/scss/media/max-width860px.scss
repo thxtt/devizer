@@ -1,0 +1,22 @@
+@media screen and (max-width: 860px){
+    .why{
+        .container{
+            .why__items__bottom {
+                justify-content: center;
+            }
+        }
+    }
+
+    .scoring{
+        .container{
+            .scoring__items__bottom{
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .scoring__item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

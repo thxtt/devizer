@@ -1,5 +1,11 @@
 .technologies_grade{
     .container{
+
+        .technologies_grade__description{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         
         .technologies_grade__items{
             display: flex;

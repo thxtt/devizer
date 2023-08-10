@@ -11,7 +11,6 @@
                     font-weight: 250;
                     line-height: 75px;
                     color: $white;
-                    width: 948px;
                     margin-bottom: 60px;
                 }
 
@@ -26,9 +25,10 @@
 
                 .hero_links{
                     display: flex;
+                    align-items: center;
+                    gap: 130px;
 
                     .btn_contact{
-                        margin-right: 129px;
                         font-weight: 250;
                     }
                 }
@@ -42,12 +42,12 @@
 
                     .hero-img{
                         position: relative;
-                        z-index: 2;
 
                         img{
                             display: block;
                             object-fit: cover;
                             max-width: 100%;
+                            z-index: 2;
                         }
                     }
 
@@ -61,8 +61,12 @@
                         border-radius: 50%;
                         background: $light-purple;
                         filter: blur(80px);
-                        z-index: 1;
+                        z-index: -1;
                     }
+                }
+
+                &:first-child{
+                    max-width: 948px;
                 }
             }
         }

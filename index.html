@@ -12,13 +12,14 @@
     <div class="container">
         <nav class="navigation">
             <a href="index.html" class="navigation__logo_brand">
-                <picture>
+                <img src="assets/img/logo-header-desktop.svg" alt="">
+                <!-- <picture>
                     <source media="(min-width:1025px)" srcset="assets/img/logo-header-desktop.svg">
                     <img src="assets/img/logo-header-desktop.svg" alt="">
-                </picture>
+                </picture> -->
             </a>
 
-            <div class="navigation__list">
+            <div class="navigation__list" id="navigation__list">
                 <ul class="navigation__list__pages">
                     <li>
                         <a href="index.html" class="link-h">
@@ -85,10 +86,12 @@
                     </li>
                 </ul>
 
-                <a class="navigation__list__started" href="#">Get in touch</a>
+                <a class="navigation__list__started" href="contact.html">Get in touch</a>
             </div>
             
-            <button class="burger" id="burger"></button>
+            <button class="burger" id="burger">
+                <span></span>
+            </button>
         </nav>
     </div>
 </header>
@@ -96,8 +99,11 @@
     <main>
 
 <section class="first_screen" id="first_screen">
+
     <div class="container">
+        
         <div class="hero_items fs_padding">
+
             <div class="hero_item">
                 <h1 class="hero_title">AI-accelerated Device based scoring platform to make insights about your clients solvency </h1>
 
@@ -107,12 +113,11 @@
                 </p>
 
                 <div class="hero_links">
-                    <a href="#" class="btn_contact">CONTACT US</a>
+                    <a href="contact.html" class="btn_contact">CONTACT US</a>
 
-                    <a href="#" class=btn_learn>LEARN MORE</a>
+                    <a href="technologies.html" class=btn_learn>LEARN MORE</a>
                 </div>
             </div>
-
 
             <div class="hero_item">
                 <div class="hero_item_img">
@@ -448,7 +453,7 @@
         </div>
 
         <div class="grade_a_block">
-            <a class="grade_btn btn_see btn" href="#">See full feature list</a>
+            <a class="grade_btn btn_see btn" href="technologies.html">See full feature list</a>
         </div>
     </div>
 </section>
@@ -484,16 +489,19 @@
         </div>
 
         <div class="scoring__items scoring__items__bottom">
+
             <div class="scoring__item">
                 <span class="scoring__item__description text_description">
                     Better for organisations who get better customers.
                 </span>
             </div>
+
             <div class="scoring__item">
                 <span class="scoring__item__description text_description">
                     Good for customers who obtain better service
                 </span>
             </div>
+            
         </div>
     </div>
 </section>
@@ -586,6 +594,7 @@
         <h2 class="global__title title_2 title_before">We Are About Global</h2>
 
         <div class="global__items">
+
             <div class="global__item">
                 <ul class="global__item__list text_description">
                     <li>Any Country</li>
@@ -594,6 +603,7 @@
                     <li>Any Device</li>
                 </ul>
             </div>
+            
             <div class="global__item">
                 <img src="assets/img/global-img.svg" alt="global-icon">
             </div>
@@ -640,6 +650,7 @@
 
 <footer class="footer" id="footer">
     <div class="container">
+
         <div class="footer__top">
             <div class="footer__top__item">
                 <a href="index.html">
@@ -676,6 +687,7 @@
             </div>
             <div class="footer__top__item">
                 <ul class="footer__top__links__pages">
+
                     <div class="footer__top__box">
                         <li>
                             <a href="index.html">Home</a>
@@ -701,14 +713,16 @@
                             <a href="contact.html">Contact Us</a>
                         </li>
                     </div>
+                    
                 </ul>
             </div>
             <div class="footer__top__item">
                 <h2 class="footer__title">Do You Still Have Questions?</h2>
 
-                <a class="btn_contact btn" href="#">CONTACT US</a>
+                <a class="btn_contact btn" href="contact.html">CONTACT US</a>
             </div>
         </div>
+        
         <div class="footer__bottom">
             <ul class="footer__bottom__list">
                 <li>
@@ -726,5 +740,8 @@
             </ul>
         </div>
     </div>
-</footer></body>
+</footer>
+    <script src="assets/js/jQuery3.6.1.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

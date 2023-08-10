@@ -1,0 +1,22 @@
+@media screen and (max-width: 550px) {
+    .first_screen{
+        .container{
+            .hero_items{
+                .hero_item{
+                    .hero_links{
+                        flex-direction: column;
+                        align-items: center;
+
+                        .btn_contact{
+                            width: 100%;
+                        }
+
+                        .btn_learn{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

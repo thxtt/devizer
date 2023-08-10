@@ -1,0 +1,27 @@
+@media screen and (max-width: 760px) {
+    .why{
+        .container{
+            .why__items__top{
+                flex-wrap: wrap;
+                border-bottom: none;
+
+                .why__item{
+                    width: 100%;
+                    height: calc(200px + 110 * ((100vw - 375px) / 1065));
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    span{
+                        &:nth-child(2){
+                            &::before{
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

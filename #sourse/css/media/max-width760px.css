@@ -1,0 +1,7 @@
+@media screen and (max-width: 760px) {
+  .why .container .why__items__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: none;
+  }
+}

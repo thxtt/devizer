@@ -1,0 +1,10 @@
+@media screen and (max-width: 900px) {
+    .scoring{
+        .container{
+            .scoring__items__bottom{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}

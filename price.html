@@ -11,13 +11,14 @@
     <div class="container">
         <nav class="navigation">
             <a href="index.html" class="navigation__logo_brand">
-                <picture>
+                <img src="assets/img/logo-header-desktop.svg" alt="">
+                <!-- <picture>
                     <source media="(min-width:1025px)" srcset="assets/img/logo-header-desktop.svg">
                     <img src="assets/img/logo-header-desktop.svg" alt="">
-                </picture>
+                </picture> -->
             </a>
 
-            <div class="navigation__list">
+            <div class="navigation__list" id="navigation__list">
                 <ul class="navigation__list__pages">
                     <li>
                         <a href="index.html" class="link-h">
@@ -84,10 +85,12 @@
                     </li>
                 </ul>
 
-                <a class="navigation__list__started" href="#">Get in touch</a>
+                <a class="navigation__list__started" href="contact.html">Get in touch</a>
             </div>
             
-            <button class="burger" id="burger"></button>
+            <button class="burger" id="burger">
+                <span></span>
+            </button>
         </nav>
     </div>
 </header>
@@ -171,6 +174,7 @@
 
 <footer class="footer" id="footer">
     <div class="container">
+
         <div class="footer__top">
             <div class="footer__top__item">
                 <a href="index.html">
@@ -207,6 +211,7 @@
             </div>
             <div class="footer__top__item">
                 <ul class="footer__top__links__pages">
+
                     <div class="footer__top__box">
                         <li>
                             <a href="index.html">Home</a>
@@ -232,14 +237,16 @@
                             <a href="contact.html">Contact Us</a>
                         </li>
                     </div>
+                    
                 </ul>
             </div>
             <div class="footer__top__item">
                 <h2 class="footer__title">Do You Still Have Questions?</h2>
 
-                <a class="btn_contact btn" href="#">CONTACT US</a>
+                <a class="btn_contact btn" href="contact.html">CONTACT US</a>
             </div>
         </div>
+        
         <div class="footer__bottom">
             <ul class="footer__bottom__list">
                 <li>

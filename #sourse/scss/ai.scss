@@ -8,6 +8,7 @@
         .ai__items{
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 90px;
 
             .ai__item{
@@ -30,6 +31,9 @@
 
                 &:nth-child(2){
                     position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     .ai__decor{
                         position: absolute;

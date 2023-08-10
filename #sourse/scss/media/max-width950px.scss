@@ -1,0 +1,22 @@
+@media screen and (max-width: 950px) {
+    .implementation{
+        background: url(../img/implementation-bg-step2.svg) left top 50% no-repeat;
+
+        .container{
+             .implementation__items{
+                flex-direction: column;
+
+                .implementation__item{
+                    &:nth-child(2){
+                        margin-top: 0;
+                        align-self: center;
+                    }
+
+                    &:nth-child(3){
+                        align-self: end;
+                    }
+                }
+             }
+        }
+    }
+}

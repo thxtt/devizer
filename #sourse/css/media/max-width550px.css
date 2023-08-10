@@ -1,0 +1,17 @@
+@media screen and (max-width: 550px) {
+  .first_screen .container .hero_items .hero_item .hero_links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .first_screen .container .hero_items .hero_item .hero_links .btn_contact {
+    width: 100%;
+  }
+  .first_screen .container .hero_items .hero_item .hero_links .btn_learn {
+    width: 100%;
+  }
+}
